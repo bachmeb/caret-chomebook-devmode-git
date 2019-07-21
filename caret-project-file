@@ -1,3 +1,8 @@
 {
-  "folders": []
+  "folders": [
+    {
+      "retained": "E77BDE8B86527B6D345B557D255FE7B4:caret-chomebook-devmode-git",
+      "path": "/caret-chomebook-devmode-git"
+    }
+  ]
 }
