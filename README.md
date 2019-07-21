@@ -45,9 +45,27 @@ alias ll='ls -alF'
 
 ### Install httpd
 ```
-crew install httpd
+crew install httpd:
 ```
+```
+All things HTTPD are in /usr/local/share/httpd.
 
+Pages are stored in /usr/local/share/httpd/htdocs.
+
+To start/stop httpd, execute the following:
+sudo apachectl start - starts httpd
+sudo apachectl stop - stops httpd
+
+To start httpd on login, execute the following:
+echo 'if [ -f /usr/local/bin/apachectl ]; then' >> ~/.bashrc
+echo '  sudo /usr/local/bin/apachectl start' >> ~/.bashrc
+echo 'fi' >> ~/.bashrc
+source ~/.bashrc
+
+To completely remove httpd, perform the following:
+crew remove httpd
+sudo rm -rf /usr/local/share/httpd
+```
 ### Make a deploy script to copy files from ~/MyFiles/{} to /
 ```
 nano /usr/local/bin/deploy-to-httpd.sh
