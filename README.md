@@ -44,15 +44,20 @@ alias ll='ls -alF'
 crew install httpd
 ```
 
-### Make a deploy script to copy files from ~/MyFiles to /
+### Make a deploy script to copy files from ~/MyFiles/{} to /
 ```
 nano /usr/local/bin/deploy-to-httpd.sh
 ```
 ```
 #!/bin/bash
 #echo hello
+echo "Files in htdocs:"
 ls -la /usr/local/share/httpd/htdocs
-cp -r ~/MyFiles/code/projects/caret-chomebook-devmode-git/* /usr/local/share/httpd/htdocs
+echo "Deleting files in htdocs...."
+rm -fr /usr/local/share/httpd/htdocs/*
+echo "Copying files to htdocs..."
+cp -r ~/MyFiles/code/projects/caret-chomebook-devmode-git/webapp/* /usr/local/share/httpd/htdocs
+echo "Files in htdocs:"
 ls -la /usr/local/share/httpd/htdocs
 ```
 ```
