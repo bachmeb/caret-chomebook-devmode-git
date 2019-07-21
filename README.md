@@ -3,17 +3,21 @@
 Editing HTML and JavaScript on a Chromebook in developer mode running Chromebrew and httpd.
 
 ## Notes
-* vi doesn't work very well on this Chromebook. I'm using nano instead. 
+* vi doesn't work very well on this Chromebook. I'm using nano instead.
 
 ## References
 * https://github.com/skycocker/chromebrew
 * https://chromium.googlesource.com/chromiumos/docs/+/master/security/noexec_shell_scripts.md
 * https://www.linuxquestions.org/questions/slackware-14/make-%27ll%27-to-run-ls-l-4175524018/
 * https://askubuntu.com/questions/1033998/what-command-is-the-alias-ll-for
+* https://www.androidcentral.com/how-enable-developer-mode-chrome-os
 
 
 ### Switch to developer mode
-* 
+* Boot your Chromebook into recovery mode by powering off the device, then holding the Esc and Refresh (the circular arrow) keys while pressing the power button.
+* Press Ctrl + D on your keyboard when asked to insert recovery media.
+* Press Enter to confirm.
+* When your device reboots, you'll see a screen stating the OS verification is off. This screen will appear every time you turn the device on to warn you that the device isn't as secure as it would be out of the box. When you see this screen, press Ctrl + D to continue booting, or wait a few seconds and the device will boot on its own.
 
 ### Set a password for chronos
 ```
