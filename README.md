@@ -61,3 +61,9 @@ sudo chmod +x /usr/local/bin/deploy-to-httpd.sh
 ```
 deploy-to-httpd
 ```
+### Start apache
+```
+sudo apachectl start
+```
+### Use a browser to GET the html and js files from the local httpd server
+* http://localhost/
